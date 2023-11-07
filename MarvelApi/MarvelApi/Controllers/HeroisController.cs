@@ -5,7 +5,7 @@ using System.Net;
 namespace MarvelApi.Controllers
 {
     [ApiController]
-    [Route("/v1/public/")]
+    [Route("/v1/public/characters/")]
     public class HeroisController : ControllerBase
     {
         public readonly IHeroisService _heroisService;
@@ -15,7 +15,7 @@ namespace MarvelApi.Controllers
             _heroisService = heroisService;
         }
 
-        [HttpGet("characters/name={nome}")]
+        [HttpGet("{nome}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

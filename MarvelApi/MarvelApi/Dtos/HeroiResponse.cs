@@ -15,7 +15,7 @@ namespace MarvelApi.Dtos
         public Events? Eventos { get; set; }
     }
 
-    public class EventosResponse
+    public class Events
     {
         public int? Available { get; set; }
 
@@ -24,7 +24,7 @@ namespace MarvelApi.Dtos
         public List<Item>? Items { get; set; }
     }
 
-    public class ItemResponse
+    public class Item
     {
         public string? ResourceURI { get; set; }
 
@@ -33,7 +33,7 @@ namespace MarvelApi.Dtos
         public string? Tipo { get; set; }
     }
 
-    public class ThumbnailResponse
+    public class Thumbnail
     {
         public string? Path { get; set; }
 
